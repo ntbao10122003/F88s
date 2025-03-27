@@ -1,0 +1,358 @@
+header {
+    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/a1af5b4729c53cc401145626eb9bae43.jpg) repeat-x center/contain;
+    padding: 10px 0px;
+    height: 100px;
+}
+
+.logo-desk a img {
+    width: 193px;
+    height: 80px;
+}
+
+.box-header-desk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-nav-desk-header-top ul {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 24px 0 0;
+}
+
+.box-nav-desk-header-top {
+    display: flex;
+    align-items: center;
+}
+
+.box-nav-desk-header-top ul li a {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+
+.box-nav-desk-header-top ul li a span {
+    display: block;
+    color: #3f4f75;
+}
+button.login {
+    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9c14731086/images/0454915e5f63819d93a323a741cdeb85.png) no-repeat center top/cover;
+    position: relative;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    width: 159px;
+    height: 55px;
+    padding: 0;
+}
+
+button.signup {
+    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9c14731086/images/1e70d9d52c325527e17f9601621c7696.png) no-repeat center top / cover;
+    position: relative;
+    color: #3f4f75;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    width: 159px;
+    height: 55px;
+    padding: 0;
+}
+
+button.test-games {
+    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9c14731086/images/0454915e5f63819d93a323a741cdeb85.png) no-repeat center top / cover;
+    position: relative;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    width: 159px;
+    height: 55px;
+    padding: 0;
+    align-items: center;
+    gap: 0px 5px;
+}
+
+button.test-games i {
+    margin-top: 5px;
+}
+.list-btn-header-top {
+    display: flex;
+    align-items: center;
+}
+.settime-auto-header p {
+    color: #3f4f75;
+    padding-bottom: 0px;
+    text-align: end;
+    font-size: 14px;
+}
+.box-header-right-top {
+    position: relative;
+}
+
+.settime-auto-header {
+    position: absolute;
+    top: -22px;
+    right: 0px;
+}
+
+button.login:hover {
+    background-position: center bottom;
+    color: #3f4f75;
+    background-position: 0px 88%;
+}
+
+button.signup:hover {
+    background-position: 0px 90%;
+}
+
+button.test-games:hover {
+     background-position: 0px 90%;
+        color: #3f4f75;
+}
+.header-bottom {
+    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/396136ee6ba2b3267977ad9790040132.jpg) repeat-x center/contain;
+    height: 80px;
+}
+
+.list-tab-header-menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-tab-header-menu ul li a {
+    position: relative;
+    padding: 24px 0px;
+    display: inline-block;
+    font-size: 20px;
+    color: #3f5075;
+    font-weight: 500;
+}
+
+
+
+.list-tab-header-menu ul li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 66px;
+    height: 4px;
+    border-radius: 14px 14px 0 0;
+    background: linear-gradient(to bottom, #359eff 48%, #1f79ff 82%);
+    display: none;
+}
+
+.list-tab-header-menu ul li:hover a {
+    color: #3399ff;
+}
+.list-tab-header-menu ul li:hover a:before{
+    display: block;
+}
+.list-tab-header-menu ul li:hover  .menu-c2-desk{
+    display: block;
+}
+.menu-c2-desk {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    height: 250px;
+    width: 100%;
+    left: 0;
+    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/dd890aee771d6001b2b3f7f8d2370f43.jpg) no-repeat center top/cover;
+}
+.item-slick-menu-c2 img {
+    margin: 0 auto;
+}
+
+.item-slick-menu-c2 a {
+    display: inline-block;
+    width: 100%;
+}
+
+
+.item-slick-menu-c2 a:hover:before {
+    content: "";
+    height: unset;
+    background: none;
+}
+
+.menu-c2-desk .slick-arrow.slick-prev {
+    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/1f94a3759cf970a035c44d7710df2e19.png);
+    width: 44px;
+    height: 44px;
+        background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-c2-desk .slick-arrow.slick-prev:hover{
+    background-position: bottom;
+}
+.menu-c2-desk .slick-arrow.slick-prev:before {
+    content: "";
+}
+
+.menu-c2-desk .slick-arrow.slick-next {
+    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/76e90f88a550a9f1bd19224c570d0134.png);
+    width: 44px;
+    height: 44px;
+        background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-c2-desk .slick-arrow.slick-next:hover {
+        display:block;
+        background-position: bottom;
+}
+.menu-c2-desk button.slick-arrow.slick-next:before {
+    content: "";
+}
+.list-tab-header-menu > ul > li > a:hover ~ .menu-c2-desk {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list-bar-menus {
+    position: fixed;
+    width: 260px;
+    height: 100vh;
+    background: #fff;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.list-bar-menus:after {
+    background: #00000080;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.list-menu-tab-mobile {
+    background: #f0f6ff;
+    height: 100vh;
+    padding: 15px;
+    overflow-y: scroll;
+}
+
+.images-qc-mobile img {
+    display: block;
+}
+
+.list-menu-tab-mobile ul li a {
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+    color: #3f4f75;
+}
+
+.list-menu-tab-mobile ul li a svg {
+    margin-right: 6px;
+}
+
+.list-menu-tab-mobile ul li {
+    border-bottom: 1px solid #e5e7eb;
+}
+.close-header-mobile {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+}
+.list-bar-menus {
+    display: none;
+}
+.list-bar-menus.active {
+    display: block;
+}
+.header-mobile-icon {
+    display: none;
+}
+.icon-nav {
+    cursor: pointer;
+}
+.item-slick-menu-c2 a:before {
+    content: "";
+    background: unset !important;
+}
+
+@media(max-width:990px){
+  
+    .icon-nav img {
+        width: 23px;
+        height: 19px;
+    }
+    
+    .logo-desk a img {
+        height: auto;
+        width: 115px;
+    }
+    
+    header {
+        height: unset;
+    }
+    
+    button.login {
+        font-size: 14px;
+        padding: 0;
+        width: 92px;
+        height: 32px;
+    }
+    
+    button.signup {
+        width: 100px;
+        height: 32px;
+        font-size: 14px;
+    }
+    
+    .list-btn-header-top {
+        gap: 0px 6px;
+    }
+
+
+    .header-bottom {
+        display: none;
+    }
+    
+    .box-nav-desk-header-top ul {
+        display: none;
+    }
+    
+    .settime-auto-header {
+        display: none;
+    }
+    
+    button.test-games {
+        display: none;
+    }
+}
