@@ -18,11 +18,10 @@ const Banner = () => {
     cssEase: "ease-in-out",
   };
 
-  // Danh sách banner
   const banners = [
-    "https://gwfd.qatgwawm.net/system-assets/PortalManagement/Image/SlideShow/239fb67cf5c148b9bdb9842902927b4e.jpg",
-    "https://gwfd.qatgwawm.net/system-assets/PortalManagement/Image/SlideShow/239fb67cf5c148b9bdb9842902927b4e.jpg",
-    "https://gwfd.qatgwawm.net/system-assets/PortalManagement/Image/SlideShow/239fb67cf5c148b9bdb9842902927b4e.jpg",
+    "/239fb67cf5c148b9bdb9842902927b4e.jpg",
+    "/3da34fd513db4a25bd5ccf681f750b34.jpg",
+    "/4cdbd8838ee242b09abc465bfbf81454.jpg",
   ];
 
   return (

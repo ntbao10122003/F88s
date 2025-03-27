@@ -38,24 +38,24 @@ const Footer = () => {
   };
 
   const brandImages = [
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
-    "https://www.3twin.bet/images/nhacungcap1.webp",
+    "/nhacungcap1.webp",
+    "/nhacungcap2.webp",
+    "/nhacungcap3.webp",
+    "/nhacungcap4.webp",
+    "/nhacungcap5.webp",
+    "/nhacungcap6.webp",
+    "/nhacungcap7.webp",
+    "/nhacungcap8.webp",
+    "/nhacungcap9.webp",
+    "/nhacungcap10.webp",
+    "/nhacungcap11.webp",
+    "/nhacungcap12.webp",
+    "/nhacungcap13.webp",
+    "/nhacungcap14.webp",
+    "/nhacungcap15.webp",
+    "/nhacungcap7.webp",
+    "/nhacungcap8.webp",
+    "/nhacungcap9.webp",
   ];
 
   return (
@@ -88,7 +88,7 @@ const Footer = () => {
             CSKH 24/7</Link>
           </li>
           <li>
-            <Link>
+            <Link to="/memberCenter">
             <div className="icon-menu-fixed-footer"></div>
             
             Tài khoản</Link>
@@ -100,7 +100,7 @@ const Footer = () => {
           <div className="logo-footer">
             <Link>
               <img
-                src="https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/812ee25a09813ea702fb26170cc3c0d3.png"
+                src="/812ee25a09813ea702fb26170cc3c0d3.png"
                 alt=""
               />
             </Link>

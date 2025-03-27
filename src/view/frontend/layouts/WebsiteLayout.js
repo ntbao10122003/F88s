@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
+
+import Login from "../pages/Login";
+import Register from "../pages/Register";
 
 // Partials
 import Header from "../partials/Header";
@@ -11,11 +14,32 @@ import "../../public/frontend/css/Header.css";
 import "../../public/frontend/css/Footer.css";
 import "../../public/frontend/css/Home.css";
 import "../../public/frontend/css/Profile.css";
+import "../../public/frontend/css/Resgeter.css";
 
 const WebsiteLayout = () => {
+  const [popup, setPopup] = useState(null);
+
   return (
     <div>
-      <Header />
+      <Header 
+        onLoginClick={() => setPopup("login")} 
+        onSignupClick={() => setPopup("signup")} 
+      />
+
+      {popup === "login" && (
+        <Login 
+          onClose={() => setPopup(null)} 
+          onSwitch={() => setPopup("signup")} // 🔄 Chuyển sang Đăng ký
+        />
+      )}
+      
+      {popup === "signup" && (
+        <Register 
+          onClose={() => setPopup(null)} 
+          onSwitch={() => setPopup("login")} // 🔄 Chuyển sang Đăng nhập
+        />
+      )}
+
       <Outlet />
       <Footer />
     </div>

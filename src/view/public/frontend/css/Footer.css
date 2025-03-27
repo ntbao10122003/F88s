@@ -137,14 +137,36 @@ span.show-footer-top {
     justify-content: space-between;
     padding: 7px 10px 5px;
 }
-
+.list-menu-entire-fixed ul li .icon-menu-fixed-footer{
+    background-size: cover !important;
+    background-position: bottom;
+    width: 28px;
+    height: 28px;
+    margin: 0px auto;
+}
 .list-menu-entire-fixed ul li .icon-menu-fixed-footer:nth-child(1) {
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.MobileNew/UK255-01/9f6994a110/home.7374acd12c1c4dd4.png);
+    background: url(/public/home.7374acd12c1c4dd4.png);
     background-size: cover;
     background-position: bottom;
     width: 28px;
     height: 28px;
     margin: 0px auto;
+}
+.list-menu-entire-fixed ul li:nth-child(2) .icon-menu-fixed-footer {
+    background: url(/public/discount.fea535136cfe5f76.png);
+   
+}
+.list-menu-entire-fixed ul li:nth-child(3) .icon-menu-fixed-footer {
+    background: url(/public/promotion.edbb651b5c040135.png);
+   
+}
+.list-menu-entire-fixed ul li:nth-child(4) .icon-menu-fixed-footer {
+    background: url(/public/chat.71373317b9c5ee09.png);
+   
+}
+.list-menu-entire-fixed ul li:nth-child(5) .icon-menu-fixed-footer {
+    background: url(/public/member.90389ebc6da952bd.png);
+   
 }
 
 .list-menu-entire-fixed ul li a {

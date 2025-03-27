@@ -1,5 +1,5 @@
 header {
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/a1af5b4729c53cc401145626eb9bae43.jpg) repeat-x center/contain;
+    background: url(/public/a1af5b4729c53cc401145626eb9bae43.jpg) repeat-x center/contain;
     padding: 10px 0px;
     height: 100px;
 }
@@ -37,8 +37,8 @@ header {
     display: block;
     color: #3f4f75;
 }
-button.login {
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9c14731086/images/0454915e5f63819d93a323a741cdeb85.png) no-repeat center top/cover;
+.login {
+    background: url(/public/0454915e5f63819d93a323a741cdeb85.png) no-repeat center top/cover;
     position: relative;
     color: #fff;
     text-transform: capitalize;
@@ -49,10 +49,11 @@ button.login {
     width: 159px;
     height: 55px;
     padding: 0;
+    line-height: 55px;
 }
 
-button.signup {
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9c14731086/images/1e70d9d52c325527e17f9601621c7696.png) no-repeat center top / cover;
+.signup {
+    background: url(/public/1e70d9d52c325527e17f9601621c7696.png) no-repeat center top / cover;
     position: relative;
     color: #3f4f75;
     text-transform: capitalize;
@@ -63,10 +64,18 @@ button.signup {
     width: 159px;
     height: 55px;
     padding: 0;
+    line-height: 55px;
+    font-family: var(--font-body-family);
+    font-weight: var(--font-heading-weight);
+    transition: all .3s ease;
+    display: inline-flex
+;
+    justify-content: center;
+    align-items: center;
 }
 
 button.test-games {
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9c14731086/images/0454915e5f63819d93a323a741cdeb85.png) no-repeat center top / cover;
+    background: url(/public/0454915e5f63819d93a323a741cdeb85.png) no-repeat center top / cover;
     position: relative;
     color: #fff;
     text-transform: capitalize;
@@ -104,7 +113,7 @@ button.test-games i {
     right: 0px;
 }
 
-button.login:hover {
+:hover {
     background-position: center bottom;
     color: #3f4f75;
     background-position: 0px 88%;
@@ -119,13 +128,15 @@ button.test-games:hover {
         color: #3f4f75;
 }
 .header-bottom {
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/396136ee6ba2b3267977ad9790040132.jpg) repeat-x center/contain;
+    background: url(/public/396136ee6ba2b3267977ad9790040132.jpg) repeat-x center/contain;
     height: 80px;
 }
 
 .list-tab-header-menu ul {
-    display: flex;
-    justify-content: space-between;
+    display: flex
+    ;
+        justify-content: left;
+        gap: 0px 50px;
 }
 
 .list-tab-header-menu ul li a {
@@ -169,7 +180,7 @@ button.test-games:hover {
     height: 250px;
     width: 100%;
     left: 0;
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/dd890aee771d6001b2b3f7f8d2370f43.jpg) no-repeat center top/cover;
+    background: url(/public/dd890aee771d6001b2b3f7f8d2370f43.jpg) no-repeat center top/cover;
 }
 .item-slick-menu-c2 img {
     margin: 0 auto;
@@ -188,7 +199,7 @@ button.test-games:hover {
 }
 
 .menu-c2-desk .slick-arrow.slick-prev {
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/1f94a3759cf970a035c44d7710df2e19.png);
+    background: url(/public/1f94a3759cf970a035c44d7710df2e19.png);
     width: 44px;
     height: 44px;
         background-repeat: no-repeat;
@@ -202,7 +213,7 @@ button.test-games:hover {
 }
 
 .menu-c2-desk .slick-arrow.slick-next {
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/76e90f88a550a9f1bd19224c570d0134.png);
+    background: url(/public/76e90f88a550a9f1bd19224c570d0134.png);
     width: 44px;
     height: 44px;
         background-repeat: no-repeat;
@@ -305,9 +316,112 @@ button.test-games:hover {
     content: "";
     background: unset !important;
 }
+.Box-signin-sucecs {
+    display: flex;
+    align-items: center;
+}
 
+.singin-name p {
+    padding-bottom: 0px;
+}
+
+.avarat-name-active {
+    position: relative;
+}
+
+.avarat-name-active .action-box-profile {
+    position: absolute;
+    top: 116%;
+    right: 0;
+    width: 320px;
+    padding: 16px 9px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 4px 0 rgba(53, 158, 255, 0.3), inset 0 0 14.4px 5px rgba(53, 158, 255, 0.08);
+    border: solid 1px #b5bcd3;
+    background-color: #fff;
+    z-index: 1;
+    display: none;
+}
+
+.avarat-name-active .action-box-profile ul {
+    flex-direction: column;
+    margin: unset;
+    gap: unset;
+}
+
+.avarat-name-active .action-box-profile ul li {
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    color: #9499b6;
+    font-size: 20px;
+    text-align: left;
+    border-radius: 12px;
+}
+
+.avarat-name-active .action-box-profile ul li a img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+    margin: 0 12px;
+    object-fit: cover;
+}
+
+.avarat-name-active .action-box-profile ul li a {
+    width: 100%;
+    height: 54px;
+    color: #9499b6;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: solid 1px #9499b6;
+    background: transparent;
+}
+
+.avarat-name-active .action-box-profile ul li:hover {
+    color: #189cff;
+    background-color: #e7f5ff;
+}
+
+.avarat-name-active .action-box-profile:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 12px 12px 12px;
+    border-color: transparent transparent #fff transparent;
+    border-radius: 4px;
+}
+.singin-name p {
+    color: #9499b6;
+    font-size: 17px;
+}
+
+.singin-name span {
+    font-size: 24px;
+    line-height: 1;
+}
+.Box-signin-sucecs {
+    gap: 0px 10px;
+}
+
+.Box-signin-sucecs ul li a span {
+    color: #3f4f75;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.avarat-name-active.active .action-box-profile {
+    display: block;
+}
 @media(max-width:990px){
-  
+    .action-box-profile ul {
+        display: block !important;
+    }
     .icon-nav img {
         width: 23px;
         height: 19px;
@@ -322,14 +436,22 @@ button.test-games:hover {
         height: unset;
     }
     
-    button.login {
+    .login {
         font-size: 14px;
         padding: 0;
         width: 92px;
         height: 32px;
+        line-height: 55px;
+        font-family: var(--font-body-family);
+        font-weight: var(--font-heading-weight);
+        transition: all .3s ease;
+        display: inline-flex
+;
+        justify-content: center;
+        align-items: center;
     }
     
-    button.signup {
+    .signup {
         width: 100px;
         height: 32px;
         font-size: 14px;

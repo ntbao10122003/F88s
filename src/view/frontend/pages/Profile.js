@@ -16,10 +16,6 @@ const Profile = () => {
     { icon: faDonate, label: "Cài đặt bảo mật" },
     { icon: faDonate, label: "Cài đặt bảo mật" },
     { icon: faDonate, label: "Cài đặt bảo mật" },
-    { icon: faDonate, label: "Cài đặt bảo mật" },
-    { icon: faDonate, label: "Cài đặt bảo mật" },
-    { icon: faDonate, label: "Cài đặt bảo mật" },
-    { icon: faDonate, label: "Cài đặt bảo mật" },
   ];
 
   return (
@@ -66,6 +62,8 @@ const Profile = () => {
                 ))}
               </ul>
             </div>
+
+            
           </div>
 
           <div className="silbar-right-step">

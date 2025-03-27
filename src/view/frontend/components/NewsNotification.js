@@ -13,13 +13,13 @@ const NewsNotification = () => {
         <div className="box-news-notification">
           <div className="notification-left">
             <img
-              src="https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/4ecb031c46f459b9b3cde681a1008776.png"
+              src="/4ecb031c46f459b9b3cde681a1008776.png"
               alt=""
             />
 
             <img
               className="icon-mobile-news-notification"
-              src="https://gwfd.qatgwawm.net/system-requirement/Web.MobileNew/UK255-01/9f6994a110/news_icon.1e72e0ca46719558.png"
+              src="/news_icon.1e72e0ca46719558.png"
               alt=""
             />
             <p>Tin tức mới nhất:</p>

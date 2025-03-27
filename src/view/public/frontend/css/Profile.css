@@ -143,12 +143,13 @@
 .sibar-profile-left {display: flex;}
 
 .silbar-right-step {
-    flex: 1;
+    flex: 1 1;
     width: calc(100% - 330px);
     margin-left: 30px;
-    padding: 15px 30px;
+    padding: 15px 15px;
     background: #Fff;
     border-radius: 20px;
+    height: max-content;
 }
 
 .box-profile {
@@ -180,10 +181,10 @@
 }
 .tab-buttons input[type=radio] {
     background-color: #0000;
-    height: 18px;
+    height: 20px;
     outline: none;
     position: relative;
-    width: 18px;
+    width: 19px;
 }
 
 .tab-buttons label {
@@ -453,4 +454,252 @@ button.btnruttien_depoin {
     display: flex;
     gap: 10px;
     padding: 10px;
+}
+
+.WithdrawMoney-body .ant-card-head {
+    background: #f5f5f5 !important;
+}
+
+.WithdrawMoney-body .alert-warning-WithdrawMoney {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.WithdrawMoney-body .alert-warning-WithdrawMoney p {
+    padding-bottom: 0px;
+    font-weight: 600;
+}
+
+.WithdrawMoney-body .ant-card-head {
+    background: #f5f5f5 !important;
+}
+
+.WithdrawMoney-body .alert-warning-WithdrawMoney {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.WithdrawMoney-body .alert-warning-WithdrawMoney p {
+    padding-bottom: 0px;
+    font-weight: 600;
+}
+
+
+
+.list-btn-rut {
+    display: flex;
+    gap: 0px 10px;
+}
+
+.list-btn-rut button {
+    width: unset !important;
+    color: #359eff;
+    background: #fff;
+    border-color: #ccc;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item-btn-pass {
+    display: flex ;
+        margin-bottom: 10px;
+}
+
+.item-btn-pass > p {
+    width: 38%;
+    font-size: 15px;
+    font-weight: 600;
+}
+.alert-warning-WithdrawMoney svg {
+    font-size: 17px;
+}
+
+.list-withdraw-header {
+    display: flex;
+    align-items: center;
+    gap: 0px 5px;
+}
+
+.item-withdraw-header.active {
+    color: #189cff;
+    background: #e7f5ff;
+}
+
+.item-withdraw-header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 146px;
+    height: 45px;
+    margin: 0 6px 5px 0;
+    color: #9499b6;
+    font-size: 15px;
+    border: solid 2px #e7f5ff;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.WithdrawApplication {
+    padding: 20px 0px;
+}
+
+.icon-banking {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    mask: url(/public/438f90d7c765cf93426ac599216a0586.svg) no-repeat center;
+    mask-size: contain;
+    background: #9499b6;
+}
+
+.item-withdraw-header:last-child .icon-banking {
+    mask: url(/public/a0132bbdeae4a1544f5c0ebc6eb01f18.svg) no-repeat center;
+    mask-size: contain;
+    background-color: #9499b6;
+}
+
+.item-withdraw-header.active .icon-banking {
+    background: #189cff;    
+}
+.item-label-bank {
+    margin-top: 20px;
+}
+
+.item-label-bank > p {
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #9499b6;
+    font-size: 16px;
+}
+
+.item-label-bank select {
+    width: 100%;
+}
+
+.item-label-bank .ant-select {
+    width: 100%;
+}
+
+.item-label-bank input {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.btn-bank button {
+    width: 100%;
+    color: #189cff;
+    background-color: #e7f5ff;
+    border: none;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.btn-bank button:hover {
+    background: #179aff;
+    color: #fff;
+}
+
+.hoinghi-container {
+    background-color: #ffffff;
+    height: 86px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hoinghi-container p {
+    padding-bottom: 0px;
+    font-size: 20px;
+    color: #3f4f75;
+}
+
+.hoinghi-container a {
+    height: 28px;
+    padding: 0 20px;
+    color: #fff;
+    line-height: 28px;
+    background-image: linear-gradient(to bottom, #359eff 48%, #1f79ff 82%);
+    border-radius: 43px;
+}
+
+.hoinghi {background-color: #e8f5fe;}
+
+.list-banence-member {
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px 12px 0px;
+}
+
+.list-banence-member {}
+
+.item-member-bannence {
+    vertical-align: top;
+    width: 25%;
+    margin-bottom: 12px;
+    padding: 10px .25rem;
+    font-size: 14px;
+    line-height: 1.25rem;
+    text-align: center;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.icon-banecer {
+    display: block;
+    width: 39px;
+    height: 39px;
+    margin: 0 auto 12px;
+    font-size: 0;
+    background: no-repeat center / contain;
+    background-image: url(/public/activity.0a0ecbc9752939fa.png);
+}
+
+.item-member-bannence p {padding-bottom: 0px;color: #233b66;}
+
+.banence-body {padding-bottom: 12px;}
+
+
+@media(max-width:990px){
+    .divchonnganhang_poind {
+        width: 100%;
+    }
+    
+    .custom-select {
+        width: 100%;
+    }
+
+    .member-depoin {
+        padding: 20px;
+    }
 }

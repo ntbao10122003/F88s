@@ -6,7 +6,7 @@
     font-size: 0;
     border: none;
     cursor: pointer;
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/730d8efb9d920b10ef6f4cdda6beb626.png) no-repeat center top/cover;
+    background: url(/public/730d8efb9d920b10ef6f4cdda6beb626.png) no-repeat center top/cover;
 }
 
 .banner-pages .slick-dots .slick-active {
@@ -52,7 +52,7 @@
     padding: 0 13px 0 23px;
     display: flex;
     align-items: center;
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/a810c95d46df16e52eceda380d52cb42.png) no-repeat center/contain;
+    background: url(/public/a810c95d46df16e52eceda380d52cb42.png) no-repeat center/contain;
     justify-content: space-between;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .btn-view-all-notification button {
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/a19c9acd690d904babcc815cab4e218d.png) no-repeat center/contain;
+    background: url(/public/a19c9acd690d904babcc815cab4e218d.png) no-repeat center/contain;
     width: 89px;
     height: 32px;
     color: #fff;
@@ -181,13 +181,13 @@ img.icon-mobile-news-notification {
     content: '';
     width: 341px;
     height: 33px;
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/e76dc1744e66a2f3e3ce4f7a5c6bfaa1.png) no-repeat center/contain;
+    background: url(/public/e76dc1744e66a2f3e3ce4f7a5c6bfaa1.png) no-repeat center/contain;
 }
 .title-hedding-Game-lobby:after {
     content: '';
     width: 341px;
     height: 33px;
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/24858ec9f307287312e3571035cf0847.png) no-repeat center/contain;
+    background: url(/public/24858ec9f307287312e3571035cf0847.png) no-repeat center/contain;
 }
 
 
@@ -198,7 +198,7 @@ img.icon-mobile-news-notification {
 }
 
 .item-sport-lobby {
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/fcb4fb5518a017fb73a76e8b853e4d9d.png) no-repeat center/contain;
+    background: url(/public/fcb4fb5518a017fb73a76e8b853e4d9d.png) no-repeat center/contain;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -213,7 +213,7 @@ img.icon-mobile-news-notification {
 .item-sport-lobby.active {
     width: 549px;
     height: 314px;
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/2502d98d1ac285d61359346e478b61f3.png) no-repeat center/contain;
+    background: url(/public/2502d98d1ac285d61359346e478b61f3.png) no-repeat center/contain;
 }
 
 .box-content-sport {
@@ -255,7 +255,7 @@ img.icon-mobile-news-notification {
     text-transform: capitalize;
     border: none;
     outline: none;
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/b6fb1286ec36eaa5a08ac1c914416c41.png) no-repeat center/contain;
+    background: url(/public/b6fb1286ec36eaa5a08ac1c914416c41.png) no-repeat center/contain;
     visibility: visible;
 }
 
@@ -310,7 +310,7 @@ img.icon-mobile-news-notification {
     height: 123px;
     padding: 0 0 20px;
     width: 285px;
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/dc40b7b46cb38f372efd5b384e598eb8.png) no-repeat center/contain;
+    background: url(/public/dc40b7b46cb38f372efd5b384e598eb8.png) no-repeat center/contain;
 }
 
 .images-game-category a {
@@ -331,7 +331,7 @@ img.icon-mobile-news-notification {
     right: 18.5px;
     width: 36px;
     height: 36px;
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/94bbcfa618ed4808e2658c2f21c8fa10.png) no-repeat center top/cover;
+    background: url(/public/94bbcfa618ed4808e2658c2f21c8fa10.png) no-repeat center top/cover;
 }
 
 .item-category-sport-game:hover .icon-next-category{
@@ -362,7 +362,7 @@ img.icon-mobile-news-notification {
 .hottest-game .btn-view-all-notification button {
     width: 177px;
     height: 37px;
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/7661380197e39286c0d162ce5d54ce0e.png) no-repeat center/contain;
+    background: url(/public/7661380197e39286c0d162ce5d54ce0e.png) no-repeat center/contain;
 }
 
 .hottest-game {
@@ -415,7 +415,7 @@ img.icon-mobile-news-notification {
     height: 59px;
     --tw-text-opacity: 1;
     color: rgb(63 79 117 / var(--tw-text-opacity, 1));
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.MobileNew/UK255-01/9f6994a110/btn.58c2e5b64c9ca9c3.png) no-repeat top / cover;
+    background: url(/public/btn.58c2e5b64c9ca9c3.png) no-repeat top / cover;
     vertical-align: top;
 }
 
@@ -444,7 +444,7 @@ img.icon-mobile-news-notification {
     height: 59px;
     --tw-text-opacity: 1;
     color: rgb(63 79 117 / var(--tw-text-opacity, 1));
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.MobileNew/UK255-01/9f6994a110/btn.58c2e5b64c9ca9c3.png) no-repeat top / cover;
+    background: url(/public/btn.58c2e5b64c9ca9c3.png) no-repeat top / cover;
     vertical-align: top;
 }
 
@@ -459,7 +459,7 @@ img.icon-mobile-news-notification {
 .image-icon-category-mobile {
     width: 40px;
     height: 30px;
-    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.MobileNew/UK255-01/9f6994a110/sport.97ee2afae78be1b8.png) no-repeat;
+    background: url(/public/sport.97ee2afae78be1b8.png) no-repeat;
     background-size: cover;
     margin: 0 auto;
 }
