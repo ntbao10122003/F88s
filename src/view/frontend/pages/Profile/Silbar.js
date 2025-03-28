@@ -1,22 +1,21 @@
-import React ,{ useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faUserCircle,
-    faDonate,
-    faHandHoldingUsd,
-  } from "@fortawesome/free-solid-svg-icons";
+  faUserCircle,
+  faDonate,
+  faHandHoldingUsd,
+} from "@fortawesome/free-solid-svg-icons";
 const Silbar = () => {
-     const [activeTab, setActiveTab] = useState("deposit");
-    
-      const menuItems = [
-        { icon: faDonate, label: "Ví" },
-        { icon: faDonate, label: "Thông tin cá nhân " },
-        { icon: faDonate, label: "Lịch sử cược" },
-        { icon: faDonate, label: "Cài đặt rút tiền" },
-        { icon: faDonate, label: "Lịch sử nạp rút" },
-        { icon: faDonate, label: "Đăng xuất" },
-      ];
+
+  const menuItems = [
+    { icon: faDonate, label: "Ví", path: "/WebsiteProfile/wellet" },
+    { icon: faDonate, label: "Thông tin cá nhân", path: "/WebsiteProfile/securityList" },
+    { icon: faDonate, label: "Lịch sử cược", path: "/WebsiteProfile/history" },
+    { icon: faDonate, label: "Cài đặt rút tiền", path: "/WebsiteProfile/changeBankAccount" },
+    { icon: faDonate, label: "Lịch sử nạp rút", path: "/WebsiteProfile/historyRut" },
+    { icon: faDonate, label: "Đăng xuất", path: "/" },
+  ];
 
   return (
     <div className="box-silbar-profile">
@@ -33,30 +32,23 @@ const Silbar = () => {
       </div>
 
       <div className="list-bank-out">
-        <button
-          className={`item-bank-out ${activeTab === "deposit" ? "active" : ""}`}
-          onClick={() => setActiveTab("deposit")}
-        >
+        <Link className="item-bank-out" to="/WebsiteProfile/Deposit">
           <FontAwesomeIcon icon={faDonate} />
           <span>Nạp tiền</span>
-        </button>
-
-        <button
-          className={`item-bank-out ${
-            activeTab === "withdraw" ? "active" : ""
-          }`}
-          onClick={() => setActiveTab("withdraw")}
-        >
+        </Link>
+        <Link className="item-bank-out" to="/WebsiteProfile/withdrawApplication">
           <FontAwesomeIcon icon={faHandHoldingUsd} />
           <span>Rút tiền</span>
-        </button>
+        </Link>
+
+       
       </div>
 
       <div className="list-menu-bar-profile">
         <ul>
           {menuItems.map((item, index) => (
             <li key={index}>
-              <Link to="#">
+              <Link to={item.path}>
                 <FontAwesomeIcon icon={item.icon} />
                 {item.label}
               </Link>

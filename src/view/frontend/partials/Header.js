@@ -102,7 +102,7 @@ const Header = ({ onLoginClick, onSignupClick }) => {
             </div>
 
             <div className="logo-desk">
-              <Link to="">
+              <Link to="/">
                 <img src="/logo.png" alt="" />
               </Link>
             </div>

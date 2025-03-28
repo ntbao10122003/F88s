@@ -46,7 +46,7 @@
 }
 
 .item-bank-out {
-    flex: 1;
+    flex: 1 1;
     height: 100px;
     border-left: solid 2px #1f79ff;
     border-right: solid 2px #1f79ff;
@@ -56,6 +56,7 @@
     font-weight: 500;
     color: #9499b6;
     text-decoration: none;
+    line-height: 100px;
 }
 
 .item-bank-out {
@@ -133,6 +134,7 @@
 
 .item-bank-out svg {
     font-size: 30px;
+    margin-right: 5px;
 }
 
 .list-menu-bar-profile ul li a svg {
@@ -154,7 +156,7 @@
 
 .box-profile {
     position: relative;
-    padding: 20px 0;
+    /* padding: 20px 0; */
     background: #eff6ff url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK255-01/9f6994a110/images/5c44e57….jpg) no-repeat center top / cover;
 }
 
@@ -535,6 +537,16 @@ button.btnruttien_depoin {
     color: #189cff;
     background: #e7f5ff;
 }
+.box-changebank {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.box-changebank .ant-form-item-required {
+    color: #3f4f75 !important;
+}
+
 
 .item-withdraw-header {
     display: inline-flex;
@@ -543,7 +555,7 @@ button.btnruttien_depoin {
     width: 146px;
     height: 45px;
     margin: 0 6px 5px 0;
-    color: #9499b6;
+    color: #3f4f75;
     font-size: 15px;
     border: solid 2px #e7f5ff;
     background: #fff;
@@ -555,7 +567,23 @@ button.btnruttien_depoin {
 .WithdrawApplication {
     padding: 20px 0px;
 }
+.WithdrawApplication .ant-form-item {
+    margin-bottom: 10px;
+}
 
+
+.withdraw-content input {
+    height: 32px;
+}
+
+
+
+.withdraw-content .ant-card-head-title {
+    text-transform: uppercase;
+}
+.item-withdraw-header span {
+    margin-left: 5px;
+}
 .icon-banking {
     width: 30px;
     height: 30px;
@@ -689,8 +717,156 @@ button.btnruttien_depoin {
 
 .banence-body {padding-bottom: 12px;}
 
+.wellet_header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+.wellet_body {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.wellet_text {
+    color: #89eb34;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.wellet_tien {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.box-member-profile {
+    padding: 20px  0px;
+}
+.box-history {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.body-historys {
+    border: 1px solid #ddd;
+    border-top: none;
+}
+.title-history {
+    color: #3f4f75;
+    background: #fff;
+    position: relative;
+    font-size: 19px;
+    padding: 10px 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+p.price-lose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+.title-history h2 {
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 21px;
+    color: #3f4f75;
+    font-weight: 400;
+}
+
+.history-header {
+    border: 1px solid #ddd;
+}
+
+.body-historys {
+    padding: 10px;
+}
+
+.body-historys p {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.table-history {
+    margin-top: 20px;
+}
+
+.table-history .ant-table-content {
+    border: 1px solid #ddd;
+}
+.title-history h3 {
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 21px;
+    color: #3f4f75;
+    font-weight: 400;
+}
+.flex-history-member {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    margin-bottom: 20px;
+}
+
+.box-history-rut h4 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+.box-vition-history {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+}
+.table-filters {
+    border: 1px solid #ddd;
+}
+.box-changebank {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+.flex-historyrut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-hinhthuc {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.selec-bottom {
+    flex: 1 1;
+    width: 100%;
+}
+.flex-hinhthuc .ant-picker.ant-picker-range {
+    width: 100%;
+}
 @media(max-width:990px){
+    .list-banence-member {
+        margin: 12px 0px;
+    }
+    
+    .item-member-bannence p {
+        font-size: 11px;
+    }
+    .item-btn-pass {
+        flex-wrap: wrap;
+    }
+    
+    .item-btn-pass > p {
+        width: 100%;
+    }
+
     .divchonnganhang_poind {
         width: 100%;
     }

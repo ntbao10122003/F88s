@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import FooterFixed from "../components/FooterFixed";
 
 const Footer = () => {
   const settings = {
@@ -59,41 +60,7 @@ const Footer = () => {
 
   return (
     <footer>
-
-      <div className="list-menu-entire-fixed">
-        <ul>
-          <li>
-            <Link>
-              <div className="icon-menu-fixed-footer"></div>
-              Trang chủ</Link>
-          </li>
-          <li>
-            
-            <Link>
-            <div className="icon-menu-fixed-footer"></div>
-            
-            Tải App</Link>
-          </li>
-          <li>
-            <Link>
-            <div className="icon-menu-fixed-footer"></div>
-            
-            Khuyến mãi</Link>
-          </li>
-          <li>
-            <Link>
-            <div className="icon-menu-fixed-footer"></div>
-            
-            CSKH 24/7</Link>
-          </li>
-          <li>
-            <Link to="/memberCenter">
-            <div className="icon-menu-fixed-footer"></div>
-            
-            Tài khoản</Link>
-          </li>
-        </ul>
-      </div>
+      <FooterFixed></FooterFixed>
       <div className="ctnr">
         <div className="footer-top">
           <div className="logo-footer">
