@@ -16,7 +16,7 @@ const WithdrawApplication = () => {
 
   return (
     <div className="ctnr">
-      <div className="WithdrawApplication">
+      <div className="WithdrawApplication box-tocal">
         <div className="list-withdraw-header">
           <div
             className={`item-withdraw-header ${
