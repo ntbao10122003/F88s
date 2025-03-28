@@ -184,20 +184,31 @@ button.test-games:hover {
 }
 .item-slick-menu-c2 img {
     margin: 0 auto;
+    height: 170px;
+    border-radius: 10px;
 }
 
 .item-slick-menu-c2 a {
     display: inline-block;
     width: 100%;
 }
+a.item-tk {
+    border: none !important;
+}
 
+.avarat-name-active .action-box-profile ul {
+    gap: 5px 0px !important;
+}
 
 .item-slick-menu-c2 a:hover:before {
     content: "";
     height: unset;
     background: none;
 }
-
+li.Tkweb {
+    height: 40px !important;
+    line-height: 40px !important;
+}
 .menu-c2-desk .slick-arrow.slick-prev {
     background: url(/public/1f94a3759cf970a035c44d7710df2e19.png);
     width: 44px;
@@ -416,7 +427,7 @@ button.test-games:hover {
 }
 
 .avarat-name-active.active .action-box-profile {
-    display: block;
+    display: block ;
 }
 @media(max-width:990px){
     .action-box-profile ul {

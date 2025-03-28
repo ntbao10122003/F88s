@@ -24,10 +24,6 @@ const MemberCenter = () => {
                         <p>Rút Tiền</p>
                        </Link>
                     </div>
-
-                  
-
-                  
                 </div>
             </div>
         </div>

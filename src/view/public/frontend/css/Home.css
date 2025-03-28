@@ -312,6 +312,9 @@ img.icon-mobile-news-notification {
     width: 285px;
     background: url(/public/dc40b7b46cb38f372efd5b384e598eb8.png) no-repeat center/contain;
 }
+.slick-prev, .slick-next {
+    z-index: 2;
+}
 
 .images-game-category a {
     display: inline-flex;
@@ -324,6 +327,7 @@ img.icon-mobile-news-notification {
     color: #3a5177;
     font-size: 26px;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .icon-next-category {
@@ -641,6 +645,6 @@ img.icon-mobile-news-notification {
     }
     
     .item-game-part-games span {
-        font-size: 11px;
+        font-size: 15px;
     }
 }

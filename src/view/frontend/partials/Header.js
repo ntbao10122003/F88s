@@ -7,13 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookOpen, faHeadset } from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({ onLoginClick, onSignupClick }) => {
-  const [showSuccessBox, setShowSuccessBox] = useState(false); // State để kiểm soát hiển thị hộp đăng nhập thành công
-  const [isActive, setIsActive] = useState(false); // State cho menu di động
+  const [showSuccessBox, setShowSuccessBox] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   const handleLoginClick = (event) => {
     event.preventDefault();
     onLoginClick();
-    setShowSuccessBox(true); // Hiển thị hộp đăng nhập thành công
+    setShowSuccessBox(true);
   };
 
   const handleSignupClick = (event) => {
@@ -23,11 +23,11 @@ const Header = ({ onLoginClick, onSignupClick }) => {
   const toggleActive = () => {
     setIsActive((prev) => !prev);
   };
-  const settings = {
+  const getSliderSettings = (images) => ({
     dots: false,
-    infinite: true,
+    infinite: images.length > 1, 
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: Math.min(images.length, 6), 
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
@@ -35,23 +35,23 @@ const Header = ({ onLoginClick, onSignupClick }) => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: Math.min(images.length, 3),
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: Math.min(images.length, 2),
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: Math.min(images.length, 1),
         },
       },
     ],
-  };
+  });
 
   const images = [
     "/aesexy.webp",
@@ -60,93 +60,93 @@ const Header = ({ onLoginClick, onSignupClick }) => {
     "/sagaming.webp",
     "/wmcasino.webp",
     "/dreamgaming.webp",
-   
   ];
 
+  const thethao = [
+    "/saba.webp",
+    "/bti.webp",
+    "/panda.webp",
+    "/afb.webp",
+    "/wmcasino.webp",
+    "/cockfight.webp",
+  ];
+
+  const nohu = [
+    "/pramaticplay.webp",
+    "/cq9gaming.webp",
+    "/microgaming.webp",
+    "/tcgaming.webp",
+    "/afbgaming.webp ",
+    "/jiligaming.webp",
+    "/rich88.webp",
+    "/baucua.webp",
+  ];
+  const banca = ["/cq9gaming.webp"];
   return (
     <div className="box-header-all">
       <header>
         <div className="ctnr">
           <div className="box-header-desk">
-            {/* Menu di động */}
             <div className="header-mobile-icon">
               <div className="icon-nav" onClick={() => setIsActive(true)}>
-                <img
-                  src="https://gwfd.qatgwawm.net/system-requirement/Web.MobileNew/UK255-01/41a6d232e6/bar.91baf94be5d93bac.png"
-                  alt=""
-                />
+                <img src="/bar.91baf94be5d93bac.png" alt="" />
               </div>
-              {/* Danh sách menu di động */}
               <div className={`list-bar-menus ${isActive ? "active" : ""}`}>
                 <div
                   className="close-header-mobile"
                   onClick={() => setIsActive(false)}
                 >
-                  <img
-                    src="https://gwfd.qatgwawm.net/system-requirement/Web.MobileNew/UK255-01/9f6994a110/menu_close.ab398811487c038b.png"
-                    alt=""
-                  />
+                  <img src="/menu_close.ab398811487c038b.png" alt="" />
                 </div>
               </div>
             </div>
 
-            {/* Logo */}
             <div className="logo-desk">
               <Link to="">
                 <img src="/logo.png" alt="" />
               </Link>
             </div>
 
-            {/* Thanh điều hướng bên phải */}
             <div className="box-header-right-top">
-              {/* Hiển thị thời gian */}
               <div className="settime-auto-header">
                 <p>{new Date().toLocaleString()}</p>
               </div>
               <div className="box-nav-desk-header-top">
-                {/* Danh sách không hoạt động khi chưa đăng nhập */}
-                  <ul class="box-no-active-sigin">
-                    <li>
-                      <Link to="">
-                        <img src="/icon1.png" alt="" />
-                        <span>Khuyến Mãi</span>
-                      </Link>
-                    </li>
+                <ul class="box-no-active-sigin">
+                  <li>
+                    <Link to="">
+                      <img src="/icon1.png" alt="" />
+                      <span>Khuyến Mãi</span>
+                    </Link>
+                  </li>
 
-                    <li>
-                      <Link to="">
-                        <img
-                          src="/47b3d6bb44afdd817b6fc2a0a66cd1aa.png"
-                          alt=""
-                        />
-                        <span>Khuyến Mãi</span>
-                      </Link>
-                    </li>
+                  <li>
+                    <Link to="">
+                      <img src="/47b3d6bb44afdd817b6fc2a0a66cd1aa.png" alt="" />
+                      <span>CSKH 24/7</span>
+                    </Link>
+                  </li>
 
-                    <li>
-                      <Link to="">
-                        <img
-                          src="/088740c399764deeda2560381b2d8cd5.png"
-                          alt=""
-                        />
-                        <span>Khuyến Mãi</span>
-                      </Link>
-                    </li>
-                  </ul>
+                  <li>
+                    <Link to="">
+                      <img src="/088740c399764deeda2560381b2d8cd5.png" alt="" />
+                      <span>Đại Lý</span>
+                    </Link>
+                  </li>
+                </ul>
 
-                {/* Hộp thành công sau khi đăng nhập */}
                 {showSuccessBox && (
                   <div className="Box-signin-sucecs">
                     <ul>
                       <li>
-                        <Link to="">
+                        <Link to="/WebsiteProfile">
                           <img src="/icon1.png" alt="" />
                           <span>Nạp tiền</span>
                         </Link>
                       </li>
 
                       <li>
-                        <Link to="">
+                        <Link to="/WebsiteProfile">
                           <img
                             src="/b04f2d4b96137eb35597bca4b4ab3a5a.png"
                             alt=""
@@ -156,7 +156,7 @@ const Header = ({ onLoginClick, onSignupClick }) => {
                       </li>
 
                       <li>
-                        <Link to="">
+                        <Link to="/WebsiteProfile">
                           <img
                             src="/3a63139307f5f1c83e9dba580f017d4c.png"
                             alt=""
@@ -184,24 +184,26 @@ const Header = ({ onLoginClick, onSignupClick }) => {
                       </div>
                       <div className="action-box-profile">
                         <ul>
+                          <li className="Tkweb">
+                            <Link to="/WebsiteProfile" className="item-tk">
+                              Thông tin tài khoản
+                            </Link>
+                          </li>
                           <li>
                             <a href="/" data-discover="true">
-                            
                               Đăng xuất
                             </a>
                           </li>
-                         
                         </ul>
                       </div>
                     </div>
                   </div>
                 )}
 
-                {/* Danh sách nút Đăng nhập và Đăng ký */}
                 {!showSuccessBox && (
                   <div className="list-btn-header-top">
                     <Link
-                      to="/login"
+                      to=""
                       className="login"
                       onClick={handleLoginClick}
                     >
@@ -236,29 +238,74 @@ const Header = ({ onLoginClick, onSignupClick }) => {
 
                   <div className="menu-c2-desk">
                     <div className="ctnr">
-                    <Slider {...settings}>
-                      {images.map((src, index) => (
-                        <div className="item-slick-menu-c2" key={index}>
-                          <a href="#">
-                            <img src={src} alt={`slide-${index}`} />
-                          </a>
-                        </div>
-                      ))}
-                    </Slider>
+                      <Slider {...getSliderSettings(images)}>
+                        {images.map((src, index) => (
+                          <div className="item-slick-menu-c2" key={index}>
+                            <a href="#">
+                              <img src={src} alt={`slide-${index}`} />
+                            </a>
+                          </div>
+                        ))}
+                      </Slider>
                     </div>
                   </div>
                 </li>
 
                 <li>
                   <Link to="">Casino</Link>
+
+                  <div className="menu-c2-desk">
+                    <div className="ctnr">
+                      <Slider {...getSliderSettings(thethao)}>
+                        {thethao.map((src, index) => (
+                          <div className="item-slick-menu-c2" key={index}>
+                            <a href="#">
+                              <img src={src} alt={`slide-${index}`} />
+                            </a>
+                          </div>
+                        ))}
+                      </Slider>
+                    </div>
+                  </div>
                 </li>
 
                 <li>
                   <Link to="">Nổ hũ</Link>
+
+                  <div className="menu-c2-desk">
+                    <div className="ctnr">
+                      <Slider {...getSliderSettings(nohu)}>
+                        {nohu.map((src, index) => (
+                          <div className="item-slick-menu-c2" key={index}>
+                            <a href="#">
+                              <img src={src} alt={`slide-${index}`} />
+                            </a>
+                          </div>
+                        ))}
+                      </Slider>
+                    </div>
+                  </div>
                 </li>
 
                 <li>
                   <Link to="">Bắn cá</Link>
+                  <div className="menu-c2-desk">
+                    <div className="ctnr">
+                      <Slider {...getSliderSettings(banca)}>
+                        {banca.map((src, index) => (
+                          <div className="item-slick-menu-c2" key={index}>
+                            <a href="#">
+                              <img src={src} alt={`slide-${index}`} />
+                            </a>
+                          </div>
+                        ))}
+                      </Slider>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <Link to="">Hoa hồng</Link>
                 </li>
               </ul>
             </div>

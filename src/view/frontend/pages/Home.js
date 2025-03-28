@@ -18,22 +18,57 @@ const Home = () => {
     responsive: [
       {
         breakpoint: 768,
-        settings: { slidesToShow: 3 },
+        settings: { slidesToShow: 5 },
       },
       {
         breakpoint: 480,
-        settings: { slidesToShow: 2 },
+        settings: { slidesToShow: 5 },
       },
     ],
   };
 
   const games = [
-    { title: "Nổ hũ" },
-    { title: "Nổ hũ" },
-    { title: "Nổ hũ" },
-    { title: "Nổ hũ" },
-    { title: "Nổ hũ" },
+    { title: "Bóng đá" },
+    { title: "Casino" },
+    { title: "Nổ Hũ" },
+    { title: "Bắn cá" },
+    { title: "Thể thao" },
   ];
+
+  const gamesMobile = [
+    { title: "Bóng đá", image: "/sport.97ee2afae78be1b8.2f4e86b39eb03af408fd.png" },
+    { title: "Casino", image: "/live.e35483fa9ff9f0e1.png" },
+    { title: "Nổ Hũ", image: "/slot.fb8f538dec8e96f3.png" },
+    { title: "Bắn cá", image: "/fish.956cb4baca336fdb.png" },
+    { title: "Thể thao", image: "/sport.97ee2afae78be1b8.png" }
+
+  ];
+
+  const sportsData = [
+    {
+      title: "Bóng đá",
+      activeIcon: "/8766bc81d6662f03435338389ad19c54.png",
+      defaultIcon: "/c67e44b68bec655d30317e2e8be4ffeb.png",
+      avatar: "/a20e6d46b4128709986d3acb72f04154.png",
+      buttonImg: "/aef367df7a75124e3ccebad241bc4984.png",
+    },
+    {
+      title: "Casino",
+      activeIcon: "/8766bc81d6662f03435338389ad19c54.png",
+      defaultIcon: "/c67e44b68bec655d30317e2e8be4ffeb.png",
+      avatar: "/7617d0d88f6254ff737f03e4bca075cf.png  ",
+      buttonImg: "/aef367df7a75124e3ccebad241bc4984.png",
+    },
+    {
+      title: "Nổ Hũ",
+      activeIcon: "/8766bc81d6662f03435338389ad19c54.png",
+      defaultIcon: "/c67e44b68bec655d30317e2e8be4ffeb.png",
+      avatar: "/6219b39e4ee470a1870b6da02ab5d0c4.png",
+      buttonImg: "/aef367df7a75124e3ccebad241bc4984.png",
+    },
+  ];
+
+
 
   return (
     <div className="box-home-pages">
@@ -53,46 +88,40 @@ const Home = () => {
           <div className="Sport-list">
             <div className="box-all-Sport">
               <div className="list-game-sport-lobby">
-                {[...Array(3)].map((_, index) => (
-                  <div
-                    key={index}
-                    className={`item-sport-lobby ${
-                      activeIndex === index ? "active" : ""
-                    }`}
-                    onClick={() => setActiveIndex(index)}
-                  >
-                    <div className="box-content-sport">
-                      <span>Thể Thao</span>
-                      <img
-                        className="active-icon"
-                        src="/8766bc81d6662f03435338389ad19c54.png"
-                        alt="img-1"
-                      />
-                      <img
-                        className="defaurt-icon"
-                        src="/c67e44b68bec655d30317e2e8be4ffeb.png"
-                        alt="img-2"
-                      />
-                    </div>
+                {sportsData.map((sport, index) => (
+            <div
+              key={index}
+              className={`item-sport-lobby ${
+                activeIndex === index ? "active" : ""
+              }`}
+              onClick={() => setActiveIndex(index)}
+            >
+              <div className="box-content-sport">
+                <span>{sport.title}</span>
+                <img
+                  className="active-icon"
+                  src={sport.activeIcon}
+                  alt="active-icon"
+                />
+                <img
+                  className="defaurt-icon"
+                  src={sport.defaultIcon}
+                  alt="default-icon"
+                />
+              </div>
 
-                    <div className="image-avatar-sport">
-                      <img
-                        src="/a20e6d46b4128709986d3acb72f04154.png"
-                        alt="avatar"
-                      />
-                    </div>
+              <div className="image-avatar-sport">
+                <img src={sport.avatar} alt="avatar" />
+              </div>
 
-                    <div className="btn-lobby-sport">
-                      <button>
-                        Chơi ngay
-                        <img
-                          src="/aef367df7a75124e3ccebad241bc4984.png"
-                          alt="button-img"
-                        />
-                      </button>
-                    </div>
-                  </div>
-                ))}
+              <div className="btn-lobby-sport">
+                <button>
+                  Chơi ngay
+                  <img src={sport.buttonImg} alt="button-img" />
+                </button>
+              </div>
+            </div>
+          ))}
               </div>
             </div>
           </div>
@@ -116,10 +145,11 @@ const Home = () => {
                 <div className="images-game-category">
                   <Link>
                     <img
-                      src="/073d9297cdee9e11e83718a96312ca51.png"
+                      src="/c7a511c2c32c8278b484effd776e7955.png"
                       alt=""
                     />
-                    <span>Bắn Cá</span>
+                    <span>Game Bài 3D
+                    </span>
                     <div className="icon-next-category"></div>
                   </Link>
                 </div>
@@ -128,10 +158,10 @@ const Home = () => {
                 <div className="images-game-category">
                   <Link>
                     <img
-                      src="/073d9297cdee9e11e83718a96312ca51.png"
+                      src="/16f0e20aa9ab61d6608b49c0e04af189.png"
                       alt=""
                     />
-                    <span>Bắn Cá</span>
+                    <span>Xổ Số</span>
                     <div className="icon-next-category"></div>
                   </Link>
                 </div>
@@ -222,13 +252,16 @@ const Home = () => {
       <div className="box-list-category-game-mobile">
         <div className="ctnr">
           <div className="list-tab-category-mobile">
-            <Slider {...settingsGame}>
-              {games.map((game, index) => (
-                <div className="box-item-category-track">
-                  <div key={index} className="item-category-game-mobile">
+          <Slider {...settingsGame}>
+              {gamesMobile.map((gamesMobile, index) => (
+                <div className="box-item-category-track" key={index}>
+                  <div className="item-category-game-mobile">
                     <Link href="#">
-                      <div className="image-icon-category-mobile"></div>
-                      <p>{game.title}</p>
+                      <div 
+                        className="image-icon-category-mobile" 
+                        style={{ backgroundImage: `url(${gamesMobile.image})` }}
+                      ></div>
+                      <p>{gamesMobile.title}</p>
                     </Link>
                   </div>
                 </div>
@@ -247,10 +280,10 @@ const Home = () => {
                 <div className="item-game-part-games">
                   <Link>
                     <img
-                      src="/1fd5c51c4e9947f88bd972fe17f4710f.png"
+                      src="/ICONTT.a6397ad290b8d7b609f6.png"
                       alt=""
                     />
-                    <span>WM Trực Tuyến</span>
+                    <span>Thể Thao</span>
                   </Link>
                 </div>
               </div>
@@ -262,10 +295,38 @@ const Home = () => {
                 <div className="item-game-part-games">
                   <Link>
                     <img
-                      src="/1fd5c51c4e9947f88bd972fe17f4710f.png"
+                      src="/ICONCASINO.c43a0fd18f4d128a6f8c.png"
                       alt=""
                     />
-                    <span>WM Trực Tuyến</span>
+                    <span>Casino</span>
+                  </Link>
+                </div>
+              </div>
+              <div
+                className="clm"
+                style={{ "--w-lg": 4, "--w-md": 4, "--w-xs": 4 }}
+              >
+                <div className="item-game-part-games">
+                  <Link>
+                    <img
+                      src="/ICONBANCA.94f75c355a1e4c092627.png  "
+                      alt=""
+                    />
+                    <span>Bắn Cá</span>
+                  </Link>
+                </div>
+              </div>
+              <div
+                className="clm"
+                style={{ "--w-lg": 4, "--w-md": 4, "--w-xs": 4 }}
+              >
+                <div className="item-game-part-games">
+                  <Link>
+                    <img
+                      src="/ICONSLOT.00fe6ed1eadc0116578a.png"
+                      alt=""
+                    />
+                    <span>Slot</span>
                   </Link>
                 </div>
               </div>
@@ -277,58 +338,18 @@ const Home = () => {
                 <div className="item-game-part-games">
                   <Link>
                     <img
-                      src="/1fd5c51c4e9947f88bd972fe17f4710f.png"
+                      src="/ICONDAGA.8c269ccc0d1aa8033ac8.png"
                       alt=""
                     />
-                    <span>WM Trực Tuyến</span>
+                    <span>Đá Gà</span>
                   </Link>
                 </div>
               </div>
-              <div
-                className="clm"
-                style={{ "--w-lg": 4, "--w-md": 4, "--w-xs": 4 }}
-              >
-                <div className="item-game-part-games">
-                  <Link>
-                    <img
-                      src="/1fd5c51c4e9947f88bd972fe17f4710f.png"
-                      alt=""
-                    />
-                    <span>WM Trực Tuyến</span>
-                  </Link>
-                </div>
-              </div>
-              <div
-                className="clm"
-                style={{ "--w-lg": 4, "--w-md": 4, "--w-xs": 4 }}
-              >
-                <div className="item-game-part-games">
-                  <Link>
-                    <img
-                      src="/1fd5c51c4e9947f88bd972fe17f4710f.png"
-                      alt=""
-                    />
-                    <span>WM Trực Tuyến</span>
-                  </Link>
-                </div>
-              </div>
-              <div
-                className="clm"
-                style={{ "--w-lg": 4, "--w-md": 4, "--w-xs": 4 }}
-              >
-                <div className="item-game-part-games">
-                  <Link>
-                    <img
-                      src="/1fd5c51c4e9947f88bd972fe17f4710f.png"
-                      alt=""
-                    />
-                    <span>WM Trực Tuyến</span>
-                  </Link>
-                </div>
-              </div>
+              
+              
             </div>
           </div>
-
+{/*          
           <div className="game-part-list">
             <div className="title-part-game d-flex js-between ai-center">
               <span>Trò Chơi Live Casino Hay Nhất</span>
@@ -422,7 +443,8 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+          
         </div>
       </div>
     </div>

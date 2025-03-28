@@ -53,9 +53,8 @@ const Footer = () => {
     "/nhacungcap13.webp",
     "/nhacungcap14.webp",
     "/nhacungcap15.webp",
-    "/nhacungcap7.webp",
-    "/nhacungcap8.webp",
-    "/nhacungcap9.webp",
+   "/nhacungcap16.webp",
+    
   ];
 
   return (
