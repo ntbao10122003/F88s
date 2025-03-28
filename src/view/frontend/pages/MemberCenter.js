@@ -15,49 +15,49 @@ const MemberCenter = () => {
            <div className='ctnr'>
                <div className='list-banence-member'>
                    <div className='item-member-bannence'>
-                      <Link to="/LayoutProfileMobile/WithdrawApplication">
+                      <Link to="/LayoutProfileMobile/Deposit">
                        <div className='icon-banecer'></div>
                        <p>Nạp Tiền</p>
                       </Link>
                    </div>
 
                    <div className='item-member-bannence'>
-                      <Link to="/LayoutProfileMobile/withdrawMoney">
+                      <Link to="/LayoutProfileMobile/withdrawApplication">
                        <div className='icon-banecer'></div>
                        <p>Rút Tiền</p>
                       </Link>
                    </div>
 
                    <div className='item-member-bannence'>
-                      <Link to="/LayoutProfileMobile/withdrawMoney">
+                      <Link to="/LayoutProfileMobile/wellet">
                        <div className='icon-banecer'></div>
                        <p>Ví</p>
                       </Link>
                    </div>
 
                    <div className='item-member-bannence'>
-                      <Link to="/LayoutProfileMobile/withdrawMoney">
+                      <Link to="/LayoutProfileMobile/securityList">
                        <div className='icon-banecer'></div>
                        <p>Thông tin cá nhân</p>
                       </Link>
                    </div>
 
                    <div className='item-member-bannence'>
-                      <Link to="/LayoutProfileMobile/withdrawMoney">
+                      <Link to="/LayoutProfileMobile/history">
                        <div className='icon-banecer'></div>
                        <p>Lịch sử cược</p>
                       </Link>
                    </div>
 
                    <div className='item-member-bannence'>
-                      <Link to="/LayoutProfileMobile/withdrawMoney">
+                      <Link to="/LayoutProfileMobile/changeBankAccount">
                        <div className='icon-banecer'></div>
                        <p>Cài đặt rút tiền</p>
                       </Link>
                    </div>
 
                    <div className='item-member-bannence'>
-                      <Link to="/LayoutProfileMobile/withdrawMoney">
+                      <Link to="/LayoutProfileMobile/historyRut">
                        <div className='icon-banecer'></div>
                        <p>Lịch sử nạp rút</p>
                       </Link>
@@ -65,7 +65,7 @@ const MemberCenter = () => {
 
 
                    <div className='item-member-bannence'>
-                      <Link to="/LayoutProfileMobile/withdrawMoney">
+                      <Link to="/">
                        <div className='icon-banecer'></div>
                        <p>Đăng xuất</p>
                       </Link>

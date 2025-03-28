@@ -274,9 +274,21 @@ input[type=radio]:checked:after {
     width: 18px;
 }
 
+.item-usdt p {
+    padding-bottom: 0px;
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    transform: translateY(-50%);
+}
 
+.item-usdt {
+    position: relative;
+}
 
-
+.list-withdraw-header.list-tabs-rutrien .item-withdraw-header {
+    height: 70px;
+}
 
 .custom-select {
     position: relative;
@@ -605,15 +617,59 @@ button.btnruttien_depoin {
 .item-label-bank {
     margin-top: 20px;
 }
-
+a.thietlap {
+    color: #f00;
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    padding-top: 5px;
+}
+.ruttien p {
+    padding-bottom: 0px;
+    color: #3f5075;
+    font-weight: 600;
+    font-size: 16px;
+}
 .item-label-bank > p {
     padding-bottom: 0px;
     margin-bottom: 5px;
     font-weight: 700;
-    color: #9499b6;
+    color: #3f4f75;
     font-size: 16px;
 }
+a.thietlap {
+    color: #f00;
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    padding-top: 5px;
+}
+.balance-info p {
+    padding-bottom: 0px;
+}
+.menuprofile_vip_item_price {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
 
+.menuprofile_vip_item_price i img {
+    margin-top: 4px;
+}
+
+.menuprofile_vip_item_price i {
+    margin-right: 4px;
+}
+.balance-info {
+    margin-top: 10px;
+}
+.item-label-bank.box-banktabs {
+    margin-top: 0px !important;
+}
+
+.item-label-bank.box-banktabs .item-label-bank {
+    margin-top: 15px;
+}
 .item-label-bank select {
     width: 100%;
 }
@@ -851,11 +907,18 @@ p.price-lose {
 .flex-hinhthuc .ant-picker.ant-picker-range {
     width: 100%;
 }
+.item-label-bank p img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+.ruttien p {padding-bottom: 0px;color: #3f5075;}
+
 @media(max-width:990px){
     .list-banence-member {
         margin: 12px 0px;
     }
-    
+
     .item-member-bannence p {
         font-size: 11px;
     }

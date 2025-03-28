@@ -1,57 +1,57 @@
-import React, { useState } from "react"; // Nhập useState từ React
+import React, { useState } from "react";
 import { Table, Typography, DatePicker, Select } from "antd";
 
 const { RangePicker } = DatePicker;
 const { Title } = Typography;
 
 const History = () => {
-  const data = []; // Dữ liệu mẫu, có thể thay đổi
+  const data = []; 
 
   const columns = [
     {
       title: "Thời gian",
       dataIndex: "time",
       key: "time",
+      width: 150,
     },
     {
       title: "Số lần cược",
       dataIndex: "betCount",
       key: "betCount",
+      width: 150,
     },
     {
       title: "Số tiền đặt cược",
       dataIndex: "betAmount",
       key: "betAmount",
+      width: 200,
     },
     {
       title: "Tiền cược hợp lệ",
       dataIndex: "validBet",
       key: "validBet",
+      width: 200,
     },
     {
       title: "Kết quả",
       dataIndex: "result",
       key: "result",
+      width: 200,
     },
   ];
-
-  // Các giá trị mẫu cho tổng kết
   const summaryData = {
     winAmount: 0,
     loseAmount: 0,
     estimatedProfit: 0,
   };
 
-  // Khai báo state
   const [selectedForm, setSelectedForm] = useState("ALL");
   const [dates, setDates] = useState([null, null]);
 
-  // Hàm xử lý thay đổi hình thức cược
   const handleFormChange = (value) => {
     setSelectedForm(value);
   };
 
-  // Hàm xử lý thay đổi ngày
   const handleDateChange = (dates) => {
     setDates(dates);
   };
@@ -95,12 +95,13 @@ const History = () => {
 
 
       <div className="table-history">
-        <Table
-          dataSource={data}
-          columns={columns}
-          pagination={false}
-          rowKey="time"
-        />
+      <Table
+  dataSource={data}
+  columns={columns}
+  pagination={false}
+  rowKey="time"
+  scroll={{ x: "max-content" }} 
+/>
       </div>
     </div>
   );

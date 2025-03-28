@@ -4,6 +4,7 @@ import Silbar from "../pages/Profile/Silbar";
 import Banner from "../components/Banner";
 import NewsNotification from "../components/NewsNotification";
 import Header from "../partials/Header";
+import Footer from "../partials/Footer";
 
 const WebsiteProfile = () => {
   return (
@@ -12,17 +13,18 @@ const WebsiteProfile = () => {
       <Banner />
       <NewsNotification />
       <div className="box-member-profile">
-      <div className="ctnr">
-        <div className="row">
-          <div className="">
-            <Silbar />
-          </div>
-          <div className="silbar-right-step">
-            <Outlet /> 
+        <div className="ctnr">
+          <div className="row">
+            <div className="">
+              <Silbar />
+            </div>
+            <div className="silbar-right-step">
+              <Outlet /> 
+            </div>
           </div>
         </div>
       </div>
-      </div>
+      <Footer></Footer>
     </div>
   );
 };

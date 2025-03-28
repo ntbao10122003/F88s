@@ -86,14 +86,12 @@ const HistoryRut = () => {
 
         <div className="flex-historyrut">
           <div className="box-vition-history">
-            {/* Radio chọn loại giao dịch */}
             <Radio.Group onChange={handleTypeChange} value={selectedType}>
               <Radio value="deposit">Nạp tiền</Radio>
               <Radio value="withdraw">Rút tiền</Radio>
               <Radio value={null}>Tất cả</Radio>
             </Radio.Group>
 
-            {/* Radio chọn danh mục */}
             <Radio.Group onChange={handleCategoryChange} value={selectedCategory}>
               <Radio value="FIAT">FIAT</Radio>
               <Radio value="CRYPTO">CRYPTO</Radio>
@@ -109,16 +107,17 @@ const HistoryRut = () => {
       </div>
 
       <Table
-        className="table-filters"
-        dataSource={filteredData}
-        columns={[
-          { title: "Thời gian", dataIndex: "time", key: "time" },
-          { title: "Tài khoản", dataIndex: "account", key: "account" },
-          { title: "Số tiền", dataIndex: "amount", key: "amount" },
-          { title: "Hình thức", dataIndex: "method", key: "method" },
-          { title: "Trạng thái", dataIndex: "status", key: "status" },
-        ]}
-      />
+  className="table-filters"
+  dataSource={filteredData}
+  columns={[
+    { title: "Thời gian", dataIndex: "time", key: "time", width: 150 },
+    { title: "Tài khoản", dataIndex: "account", key: "account", width: 200 },
+    { title: "Số tiền", dataIndex: "amount", key: "amount", width: 200 },
+    { title: "Hình thức", dataIndex: "method", key: "method", width: 200 },
+    { title: "Trạng thái", dataIndex: "status", key: "status", width: 150 },
+  ]}
+  scroll={{ x: "max-content" }} 
+/>
     </div>
   );
 };

@@ -4,17 +4,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUserCircle,
   faDonate,
-  faHandHoldingUsd,
+  faHandHoldingUsd,faUser,
+  faHistory,
+  faCog,
+  faMoneyBill,
+  faSignOutAlt,
 } from "@fortawesome/free-solid-svg-icons";
 const Silbar = () => {
 
   const menuItems = [
     { icon: faDonate, label: "Ví", path: "/WebsiteProfile/wellet" },
-    { icon: faDonate, label: "Thông tin cá nhân", path: "/WebsiteProfile/securityList" },
-    { icon: faDonate, label: "Lịch sử cược", path: "/WebsiteProfile/history" },
-    { icon: faDonate, label: "Cài đặt rút tiền", path: "/WebsiteProfile/changeBankAccount" },
-    { icon: faDonate, label: "Lịch sử nạp rút", path: "/WebsiteProfile/historyRut" },
-    { icon: faDonate, label: "Đăng xuất", path: "/" },
+    { icon: faUser , label: "Thông tin cá nhân", path: "/WebsiteProfile/securityList" },
+    { icon: faHistory, label: "Lịch sử cược", path: "/WebsiteProfile/history" },
+    { icon: faCog, label: "Cài đặt rút tiền", path: "/WebsiteProfile/changeBankAccount" },
+    { icon: faMoneyBill, label: "Lịch sử nạp rút", path: "/WebsiteProfile/historyRut" },
+    { icon: faSignOutAlt, label: "Đăng xuất", path: "/" },
   ];
 
   return (
@@ -25,10 +29,18 @@ const Silbar = () => {
           <span>Tài Khoản</span>
           <span>Bao10122003</span>
         </div>
-        <div className="price-avatar">
+       <div className="d-flex ai-center">
+       <div className="price-avatar">
           <span>Số dư:</span>
           <span>0</span>
         </div>
+
+        <div class="menuprofile_vip_item_price">
+          <i>
+            <img src="/hang.png" alt="" width="24" height="24"/></i>
+          LEVEL 0
+          </div>
+       </div>
       </div>
 
       <div className="list-bank-out">

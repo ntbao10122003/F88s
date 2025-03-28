@@ -29,14 +29,14 @@ const WebsiteLayout = () => {
       {popup === "login" && (
         <Login 
           onClose={() => setPopup(null)} 
-          onSwitch={() => setPopup("signup")} // 🔄 Chuyển sang Đăng ký
+          onSwitch={() => setPopup("signup")} 
         />
       )}
       
       {popup === "signup" && (
         <Register 
           onClose={() => setPopup(null)} 
-          onSwitch={() => setPopup("login")} // 🔄 Chuyển sang Đăng nhập
+          onSwitch={() => setPopup("login")} 
         />
       )}
 

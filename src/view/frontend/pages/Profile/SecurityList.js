@@ -6,7 +6,7 @@ import { faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
 const { Option } = Select;
 
 const SecurityList = () => {
-  const [activeTab, setActiveTab] = useState("taikhoan");
+  const [activeTab, setActiveTab] = useState("");
   const [form] = Form.useForm();
 
   const onFinish = (values) => {
@@ -16,7 +16,7 @@ const SecurityList = () => {
   return (
     <div className="ctnr">
       <div className="WithdrawApplication">
-        <div className="list-withdraw-header">
+        <div className="list-withdraw-header list-tabs-rutrien">
           <div
             className={`item-withdraw-header ${
               activeTab === "taikhoan" ? "active" : ""
