@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookOpen, faHeadset } from "@fortawesome/free-solid-svg-icons";
+import BoxSigninSucecs from "../components/BoxSigninSucecs";
 
 const Header = ({ onLoginClick, onSignupClick }) => {
   const [showSuccessBox, setShowSuccessBox] = useState(false);
@@ -136,36 +137,17 @@ const Header = ({ onLoginClick, onSignupClick }) => {
                 </ul>
 
                 {showSuccessBox && (
+                  
+                  <div className="box-container-show">
+<div className="icon-mail">
+                      <Link>
+                        <img src="/event.61266ed1c0cb87a0.png" alt="" />
+                      </Link>
+                    </div>
+
                   <div className="Box-signin-sucecs">
-                    <ul>
-                      <li>
-                        <Link to="/WebsiteProfile">
-                          <img src="/icon1.png" alt="" />
-                          <span>Nạp tiền</span>
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link to="/WebsiteProfile">
-                          <img
-                            src="/b04f2d4b96137eb35597bca4b4ab3a5a.png"
-                            alt=""
-                          />
-                          <span>Rút tiền</span>
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link to="/WebsiteProfile">
-                          <img
-                            src="/3a63139307f5f1c83e9dba580f017d4c.png"
-                            alt=""
-                          />
-                          <span>VIP</span>
-                        </Link>
-                      </li>
-                    </ul>
-
+                    <BoxSigninSucecs/>
+                    
                     <div className="singin-name">
                       <p> Bao10122003 </p>
                       <span>0</span>
@@ -197,6 +179,7 @@ const Header = ({ onLoginClick, onSignupClick }) => {
                         </ul>
                       </div>
                     </div>
+                  </div>
                   </div>
                 )}
 

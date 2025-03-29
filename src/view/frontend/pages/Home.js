@@ -5,6 +5,7 @@ import NewsNotification from "../components/NewsNotification";
 import Banner from "../components/Banner";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import BoxSigninSucecs from "../components/BoxSigninSucecs";
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -269,7 +270,17 @@ const Home = () => {
             </Slider>
           </div>
 
-        
+          <div className="box-login-sigin-respert">
+              <div class="member-name-login">
+              <div className="singin-name">
+                      <p> Bao10122003 </p>
+                      <span>0</span>
+                    </div>
+              </div>
+              <div className="box-member-right-login">
+                <BoxSigninSucecs/>
+              </div>
+            </div>        
 
           <div className="game-part-list">
             <div className="row">
