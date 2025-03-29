@@ -490,7 +490,7 @@ img.icon-mobile-news-notification {
 }
 
 .list-tab-category-mobile .slick-arrow.slick-next {
-    right: 0;
+    right: 5px;
     content: "";
     display: block;
     width: 0;
@@ -506,7 +506,7 @@ img.icon-mobile-news-notification {
 
 
 .list-tab-category-mobile .slick-arrow.slick-prev {
-    left: 0;
+    left: 5px;
     content: "";
     display: block;
     width: 0;
