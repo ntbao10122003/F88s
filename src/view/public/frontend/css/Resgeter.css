@@ -133,7 +133,7 @@ button.btn-submit-sigin {
         margin: unset;
         background: url(/public/bg.973a81f3e14f0b68.png) no-repeat center top;
         border-radius: unset;
-        padding: 15px 20px;
+        padding: 40px 20px 0px;
     }
     
     .Item-form-resgeter label {
